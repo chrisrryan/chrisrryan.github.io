@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>The Test Automation Pyramid - Chris Ryan</title>
+<meta name="description" content="The Test Automation Pyramid concept that guides teams when it comes to prioritising the different kinds of testing in a test strategy.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:site_name" content="Chris Ryan">
+<meta property="og:title" content="The Test Automation Pyramid">
+<meta property="og:description" content="The Test Automation Pyramid concept that guides teams when it comes to prioritising the different kinds of testing in a test strategy.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://chrisrryan.github.io/posts/test-automation-pyramid/">
+    <meta property="og:image" content="https://chrisrryan.github.io/img/the-test-automation-pyramid.jpg">
+    <meta property="og:image:alt" content="The Test Automation Pyramid">
+
+
+  <link rel="manifest" href="/favicon/site.webmanifest?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=2">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <meta name="generator" content="Hugo 0.105.0">
+  <link rel="stylesheet" href="/css/bundle.min.5233f2a4cd515395301b4154f6c1c621695e8cf53faa0935b76ac52fed7f4585.css" integrity="sha256-UjPypM1RU5UwG0FU9sHGIWlejPU/qgk1t2rFL&#43;1/RYU="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          The Test Automation Pyramid
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+        
+      
+        
+          
+          <a href="/posts" class="nav link"><i class='far fa-newspaper'></i> Posts</a>
+        
+      
+        
+          
+          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+        
+      
+        
+          
+          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=The%20Test%20Automation%20Pyramid&amp;url=https%3a%2f%2fchrisrryan.github.io%2fposts%2ftest-automation-pyramid%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fchrisrryan.github.io%2fposts%2ftest-automation-pyramid%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fchrisrryan.github.io%2fposts%2ftest-automation-pyramid%2f&amp;title=The%20Test%20Automation%20Pyramid" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fchrisrryan.github.io%2fposts%2ftest-automation-pyramid%2f&amp;title=The%20Test%20Automation%20Pyramid" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fchrisrryan.github.io%2fposts%2ftest-automation-pyramid%2f&amp;description=The%20Test%20Automation%20Pyramid" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Chris%20Ryan&amp;body=https%3a%2f%2fchrisrryan.github.io%2fposts%2ftest-automation-pyramid%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Chris Ryan" /></a>
+  <header>
+    <h1>Chris Ryan</h1>
+  </header>
+  <main>
+    <p>Dev / Test Automation / DevOps</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/chrisrryan" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+<article>
+  <div class="post">
+    
+    <div class="content">
+      <a href="/posts/test-automation-pyramid/" class="image" style="--bg-image: url('/img/the-test-automation-pyramid.jpg');">
+    <img class="stretchH" src="/img/the-test-automation-pyramid.jpg" alt="The Test Automation Pyramid">
+  </a>  <h3 id="what-is-the-test-automation-pyramid">WHAT IS THE TEST AUTOMATION PYRAMID?</h3>
+<p>The <strong>Test Automation Pyramid</strong>, differentiates test types to maximise the benefits of each to deliver the optimal test strategy and return on investment. It&rsquo;s an essential framework in the development of an effective test strategy.</p>
+<h3 id="selection-criteria-to-maximise-roi">Selection Criteria to Maximise ROI</h3>
+<p>The benefits of test automation may lead to a desire to automate everything. However, there&rsquo;s a smarter way to approach this, to recognise the different types of tests and use each most effectively.</p>
+<ul>
+<li>Clear-cut test objective</li>
+<li>Repeatable &amp; adds value</li>
+<li>Meaningful</li>
+<li>Robust &amp; Reliable</li>
+</ul>
+<p>With Agile and it&rsquo;s accelerated product release cycles requires accelerated testing. With the focus on shorter release cycles, test automation can be hugely beneficial, if not essential.</p>
+<p>With Continuous Integration/Continuous Deployment (CI/CD) methods, these benefits are amplified, automation allows test cases to be run each time code is pushed to the repository, ensuring bugs are found early and fixes made quickly. The process automates delivery of high quality code from development through to production.</p>
+<h3 id="what-is-the-test-automation-pyramid-1">What Is the Test Automation Pyramid?</h3>
+<blockquote>
+<p>The <strong>Test Automation Pyramid</strong>, guides teams in designing the optimal proportion of test approaches for the most effective automated test strategy.</p>
+</blockquote>
+<p>The pyramid represents the three types of software tests:</p>
+<section>
+  <img class="image-right" src='/img/split-pyramid.jpg' />
+</section>
+
+<h4 id="base-layer-unit-tests">Base layer: Unit Tests</h4>
+<p>Unit tests form the foundation, they test the smallest, most independent, they&rsquo;re quick to write and run fast. These should be the largest element with your automated test suite and are the base of the pyramid.</p>
+<h4 id="middle-layer-service-tests">Middle layer: Service Tests</h4>
+<p>Service tests are the next layer of the pyramid. Service tests that bypass an application’s UI and talk directly to the API underneath it.</p>
+<p>Service tests are usually slower and offer less precise feedback than unit tests. They might also be harder to write since they’d typically require access to the external dependencies. Despite their complexities, they have the benefit of painting a more realistic picture, by verifying the app’s behavior in a way that’s closer to how the user interacts with it than unit tests.</p>
+<h4 id="the-top-of-the-pyramid-ui-tests">The Top of the Pyramid: UI Tests</h4>
+<p>The top of the pyramid features what are called UI tests in Martin Fowler’s article, even though, in my definition, they’re more like end-to-end tests.</p>
+<p>These are tests that drive the application the way a user would. These tests tend to be slow to run and very brittle since they might break due to the smallest change to the application’s UI. On the other hand, despite their problems, they do offer benefits. They mimic the way users interact with the application with much more realism than the other kinds of tests. Their results offer feedback that’s less precise. But at the same time, they might catch defects that the other types of testing would not.</p>
+<p>To balance this, the testing pyramid says you should leverage this type of testing. Just make sure to have as few of them as you can get away with.</p>
+<h4 id="consider-the-test-automation-pyramid-for-getting-the-best-out-of-your-testing-approach">Consider the Test Automation Pyramid for Getting the Best Out of Your Testing Approach</h4>
+<p>Software testing is an essential activity. And what’s more, leveraging test automation is essential for tech organizations that want to deliver code as fast as possible while keeping quality high.</p>
+<p>However, resources aren’t infinite. You have to use some strategy to decide how to allocate your resources when working on testing. The test automation pyramid is a metaphor that guides you on how to make those decisions.</p>
+<p><em>Article by Chris Ryan</em></p>
+
+    </div>
+    <footer><div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/test-automation/">Test Automation</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/agile/">Agile</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/ci/cd/">CI/CD</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/test-strategy/">Test Strategy</a></li>
+        
+      
+    </ul>
+  
+</div>
+</footer>
+  </div>
+</article>
+<div class="pagination">
+  
+  <a href="/posts/dotnet6_test_automation/" class="button left"
+    ><span>Test Automation with .NET Core 6, RestSharp 1.07&#43; and NUnit</span></a
+  >
+   
+  <a href="/posts/dictionary/" class="button right"
+    ><span>The Test Engineering Dictionary</span></a
+  >
+  
+</div>
+
+      </main>
+      <section id="site-sidebar">
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+          
+          <li>
+              <a href="/categories/.net/">.net<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/cypress/">cypress<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/selenium/">selenium<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/software-testing/">software-testing<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/test-automation/">test-automation<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/testing/">testing<span class="count">2</span></a>
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>Chris Ryan's Site</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+  <p class="copyright">
+    © 2023 CHRIS RYAN
+      <br>
+    
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    
+    <script>hljs.highlightAll();</script><script src="/js/bundle.min.e6d10a8d42b07d29baa2afb0d72a501c593c2f6577582527cc26c24175c10f3a.js" integrity="sha256-5tEKjUKwfSm6oq&#43;w1ypQHFk8L2V3WCUnzCbCQXXBDzo="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>

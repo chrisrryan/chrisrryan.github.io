@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Rapid Software Testing (RST) - Chris Ryan</title>
+<meta name="description" content="RST is more a testing mindset and approach than methodology...">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:site_name" content="Chris Ryan">
+<meta property="og:title" content="Rapid Software Testing (RST)">
+<meta property="og:description" content="RST is more a testing mindset and approach than methodology...">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://chrisrryan.github.io/posts/rapid-software-testing/">
+    <meta property="og:image" content="https://chrisrryan.github.io/img/rapid-software-testing.jpg">
+    <meta property="og:image:alt" content="Rapid Software Testing">
+
+
+  <link rel="manifest" href="/favicon/site.webmanifest?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=2">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <meta name="generator" content="Hugo 0.105.0">
+  <link rel="stylesheet" href="/css/bundle.min.5233f2a4cd515395301b4154f6c1c621695e8cf53faa0935b76ac52fed7f4585.css" integrity="sha256-UjPypM1RU5UwG0FU9sHGIWlejPU/qgk1t2rFL&#43;1/RYU="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          Rapid Software Testing (RST)
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+        
+      
+        
+          
+          <a href="/posts" class="nav link"><i class='far fa-newspaper'></i> Posts</a>
+        
+      
+        
+          
+          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+        
+      
+        
+          
+          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Rapid%20Software%20Testing%20%28RST%29&amp;url=https%3a%2f%2fchrisrryan.github.io%2fposts%2frapid-software-testing%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fchrisrryan.github.io%2fposts%2frapid-software-testing%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fchrisrryan.github.io%2fposts%2frapid-software-testing%2f&amp;title=Rapid%20Software%20Testing%20%28RST%29" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fchrisrryan.github.io%2fposts%2frapid-software-testing%2f&amp;title=Rapid%20Software%20Testing%20%28RST%29" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fchrisrryan.github.io%2fposts%2frapid-software-testing%2f&amp;description=Rapid%20Software%20Testing%20%28RST%29" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Chris%20Ryan&amp;body=https%3a%2f%2fchrisrryan.github.io%2fposts%2frapid-software-testing%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Chris Ryan" /></a>
+  <header>
+    <h1>Chris Ryan</h1>
+  </header>
+  <main>
+    <p>Dev / Test Automation / DevOps</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/chrisrryan" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+<article>
+  <div class="post">
+    
+    <div class="content">
+      <a href="/posts/rapid-software-testing/" class="image" style="--bg-image: url('/img/rapid-software-testing.jpg');">
+    <img class="stretchH" src="/img/rapid-software-testing.jpg" alt="Rapid Software Testing">
+  </a>  <p><strong><em>RAPID SOFTWARE TESTING (RST)</em></strong>, authored by <a href="https://www.satisfice.com">James Bach</a>, is an advocate of exploratory testing to build an understanding of the product, its users and the risks. Other testing methodologies focus on creating test artifacts based upon features, in contrast with RST, it&rsquo;s light on paperwork and rapid as it encourages focus on product stewardship and a de-emphasis on artifact collection and reporting counts&hellip;</p>
+<h5 id="which-release-meeting-call-do-you-want-to-be-in-on">Which release meeting call do you want to be in on?</h5>
+<h6 id="review-meeting-one">Review Meeting One</h6>
+<blockquote>
+<p>We ran a total of 2000 test case, 1900 passed and 100 failed. This graph shows the rate of test progress. We should think about pausing the release until we have these tests passing.</p>
+</blockquote>
+<h6 id="review-meeting-two">Review Meeting Two</h6>
+<blockquote>
+<p>We have one area of concern for this week&rsquo;s release. On our user story for Customer Referral Discounts, maximum discount should continue to 15% with 5+ referrals but currently stops at 10%. This appears to be due to the time lag on the referral batch processing. Impact is increased support tickets, manual refunds and basket abandonment. However, only 1% of customers currently have 5+ referrals. The Defect Report has been emailed.</p>
+</blockquote>
+<p>Clearly, the second scenario allow a useful discussion around impact, risk, mitigation and allows informed decision making. This in essence is what RST seeks to address; managers like metrics, but always have the story with the numbers and never numbers without the story.</p>
+<section>
+  <img class="image-right" src='/img/mind-map.jpg' />
+</section>
+
+<p>RST is a not prescriptive methodology, more a <a href="https://en.wikipedia.org/wiki/Soft_systems_methodology">soft systems approach</a> to software testing. It&rsquo;s a holistic philosophy giving consideration to mission, product, relationships, user environment and deliverables. In terms of tooling, it largely relies on mind maps in preference to time consuming, traditional documentation.</p>
+<p>This fits well with Agile, as a approach which embrace change, fast test cycles and clear communication. In some cases, such as health, military and safety-critical applications, this lean documentation would be unsatisfactory on it&rsquo;s own. However, even here it could play a valuable supporting role, as a birds-eye view, a lightweight and easily absorbed communication tool.</p>
+<p>In conclusion, RST provides many useful techniques in any tester toolkit.</p>
+<p><em>Article by Chris Ryan</em></p>
+    </div>
+    <footer><div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/testing/">Testing</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/rapid-software-testing/">Rapid Software Testing</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/rst/">RST</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/testing/">testing</a></li>
+        
+      
+    </ul>
+  
+</div>
+</footer>
+  </div>
+</article>
+<div class="pagination">
+   
+  <a href="/posts/wordle-with-cypress/" class="button right"
+    ><span>Solving Wordle with Cypress</span></a
+  >
+  
+</div>
+
+      </main>
+      <section id="site-sidebar">
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+          
+          <li>
+              <a href="/categories/.net/">.net<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/cypress/">cypress<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/selenium/">selenium<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/software-testing/">software-testing<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/test-automation/">test-automation<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/testing/">testing<span class="count">2</span></a>
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>Chris Ryan's Site</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+  <p class="copyright">
+    © 2023 CHRIS RYAN
+      <br>
+    
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    
+    <script>hljs.highlightAll();</script><script src="/js/bundle.min.e6d10a8d42b07d29baa2afb0d72a501c593c2f6577582527cc26c24175c10f3a.js" integrity="sha256-5tEKjUKwfSm6oq&#43;w1ypQHFk8L2V3WCUnzCbCQXXBDzo="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>

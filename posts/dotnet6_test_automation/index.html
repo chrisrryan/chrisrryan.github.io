@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Test Automation with .NET Core 6, RestSharp 1.07&#43; and NUnit - Chris Ryan</title>
+<meta name="description" content="Exploring .NET Core 6 with REST API Test Automation...">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:site_name" content="Chris Ryan">
+<meta property="og:title" content="Test Automation with .NET Core 6, RestSharp 1.07&#43; and NUnit">
+<meta property="og:description" content="Exploring .NET Core 6 with REST API Test Automation...">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://chrisrryan.github.io/posts/dotnet6_test_automation/">
+    <meta property="og:image" content="https://chrisrryan.github.io/img/dotnet6.png">
+    <meta property="og:image:alt" content="Test Automation with .NET Core 6">
+
+
+  <link rel="manifest" href="/favicon/site.webmanifest?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=2">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <meta name="generator" content="Hugo 0.105.0">
+  <link rel="stylesheet" href="/css/bundle.min.5233f2a4cd515395301b4154f6c1c621695e8cf53faa0935b76ac52fed7f4585.css" integrity="sha256-UjPypM1RU5UwG0FU9sHGIWlejPU/qgk1t2rFL&#43;1/RYU="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          Test Automation with .NET Core 6, RestSharp 1.07&#43; and NUnit
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+        
+      
+        
+          
+          <a href="/posts" class="nav link"><i class='far fa-newspaper'></i> Posts</a>
+        
+      
+        
+          
+          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+        
+      
+        
+          
+          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Test%20Automation%20with%20.NET%20Core%206%2c%20RestSharp%201.07%2b%20and%20NUnit&amp;url=https%3a%2f%2fchrisrryan.github.io%2fposts%2fdotnet6_test_automation%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fchrisrryan.github.io%2fposts%2fdotnet6_test_automation%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fchrisrryan.github.io%2fposts%2fdotnet6_test_automation%2f&amp;title=Test%20Automation%20with%20.NET%20Core%206%2c%20RestSharp%201.07%2b%20and%20NUnit" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fchrisrryan.github.io%2fposts%2fdotnet6_test_automation%2f&amp;title=Test%20Automation%20with%20.NET%20Core%206%2c%20RestSharp%201.07%2b%20and%20NUnit" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fchrisrryan.github.io%2fposts%2fdotnet6_test_automation%2f&amp;description=Test%20Automation%20with%20.NET%20Core%206%2c%20RestSharp%201.07%2b%20and%20NUnit" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Chris%20Ryan&amp;body=https%3a%2f%2fchrisrryan.github.io%2fposts%2fdotnet6_test_automation%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Chris Ryan" /></a>
+  <header>
+    <h1>Chris Ryan</h1>
+  </header>
+  <main>
+    <p>Dev / Test Automation / DevOps</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/chrisrryan" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+<article>
+  <div class="post">
+    
+    <div class="content">
+      <a href="/posts/dotnet6_test_automation/" class="image" style="--bg-image: url('/img/dotnet6.png');">
+    <img class="stretchH" src="/img/dotnet6.png" alt="Test Automation with .NET Core 6">
+  </a>  <p><strong>Test Automation with .NET Core 6</strong>, time to investigate .NET Core 6 and RESTSharp 1.07+ for Test Automation.  NET CORE 6 is now stable and production ready, so I felt it was time to jump in and implement some test automation with it&hellip;</p>
+<p>I&rsquo;ve implemented a couple of basic smoke tests using <a href="https://api.zippopotam.us/">https://api.zippopotam.us/</a> for some UK Postcode lookup and typicode.com for a POST test.</p>
+<p>I&rsquo;m using RestSharp, which since version 1.07 had undergone a major upgrade, which contains quite a few breaking changes. I&rsquo;m using 1.08 here and System.Text.Json.Serialization in place of Newtonsoft for some JSON framework speed improvement.</p>
+<p>I&rsquo;ve added a couple of performance tests using System.Diagnostics.Stopwatch with a very generous test assertion that REST requests will complete in under 1000 milliseconds.</p>
+<h3 id="the-code">The Code</h3>
+<p>Check my code here on GitHub.</p>
+<p><a href="https://github.com/chrisrryan/autotest_dotnet6">GitHub chrisrryan/autotest_dotnet6</a></p>
+<h3 id="demo">Demo</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/l8yG1b66wiU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><em>Article by Chris Ryan</em></p>
+    </div>
+    <footer><div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/testing/">Testing</a></li>
+        
+          <li><a class="article-terms-link" href="/categories/.net/">.NET</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/.net-core-6/">.NET Core 6</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/rest-api/">REST API</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/testing/">testing</a></li>
+        
+      
+    </ul>
+  
+</div>
+</footer>
+  </div>
+</article>
+<div class="pagination">
+  
+  <a href="/posts/wordle-selenium/" class="button left"
+    ><span>Solving Wordle with Selenium 4 &amp; Java 17</span></a
+  >
+   
+  <a href="/posts/test-automation-pyramid/" class="button right"
+    ><span>The Test Automation Pyramid</span></a
+  >
+  
+</div>
+
+      </main>
+      <section id="site-sidebar">
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+          
+          <li>
+              <a href="/categories/.net/">.net<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/cypress/">cypress<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/selenium/">selenium<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/software-testing/">software-testing<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/test-automation/">test-automation<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/testing/">testing<span class="count">2</span></a>
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>Chris Ryan's Site</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+  <p class="copyright">
+    © 2023 CHRIS RYAN
+      <br>
+    
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    
+    <script>hljs.highlightAll();</script><script src="/js/bundle.min.e6d10a8d42b07d29baa2afb0d72a501c593c2f6577582527cc26c24175c10f3a.js" integrity="sha256-5tEKjUKwfSm6oq&#43;w1ypQHFk8L2V3WCUnzCbCQXXBDzo="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>

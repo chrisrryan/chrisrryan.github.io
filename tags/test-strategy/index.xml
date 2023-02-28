@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test Strategy on Chris Ryan</title>
+    <link>https://chrisrryan.github.io/tags/test-strategy/</link>
+    <description>Recent content in Test Strategy on Chris Ryan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 CHRIS RYAN</copyright><atom:link href="https://chrisrryan.github.io/tags/test-strategy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Test Automation Pyramid</title>
+      <link>https://chrisrryan.github.io/posts/test-automation-pyramid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisrryan.github.io/posts/test-automation-pyramid/</guid>
+      <description>WHAT IS THE TEST AUTOMATION PYRAMID? The Test Automation Pyramid, differentiates test types to maximise the benefits of each to deliver the optimal test strategy and return on investment. It&amp;rsquo;s an essential framework in the development of an effective test strategy.
+Selection Criteria to Maximise ROI The benefits of test automation may lead to a desire to automate everything. However, there&amp;rsquo;s a smarter way to approach this, to recognise the different types of tests and use each most effectively.</description>
+    </item>
+    
+  </channel>
+</rss>

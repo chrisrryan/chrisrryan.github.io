@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Solving Wordle with Cypress - Chris Ryan</title>
+<meta name="description" content="Applying some automation to solving the daily Wordle problem...">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:site_name" content="Chris Ryan">
+<meta property="og:title" content="Solving Wordle with Cypress">
+<meta property="og:description" content="Applying some automation to solving the daily Wordle problem...">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://chrisrryan.github.io/posts/wordle-with-cypress/">
+    <meta property="og:image" content="https://chrisrryan.github.io/img/wordle-cypress.png">
+    <meta property="og:image:alt" content="Solving Wordle with Cypress">
+
+
+  <link rel="manifest" href="/favicon/site.webmanifest?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=2">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <meta name="generator" content="Hugo 0.105.0">
+  <link rel="stylesheet" href="/css/bundle.min.5233f2a4cd515395301b4154f6c1c621695e8cf53faa0935b76ac52fed7f4585.css" integrity="sha256-UjPypM1RU5UwG0FU9sHGIWlejPU/qgk1t2rFL&#43;1/RYU="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          Solving Wordle with Cypress
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+        
+      
+        
+          
+          <a href="/posts" class="nav link"><i class='far fa-newspaper'></i> Posts</a>
+        
+      
+        
+          
+          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+        
+      
+        
+          
+          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Solving%20Wordle%20with%20Cypress&amp;url=https%3a%2f%2fchrisrryan.github.io%2fposts%2fwordle-with-cypress%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fchrisrryan.github.io%2fposts%2fwordle-with-cypress%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fchrisrryan.github.io%2fposts%2fwordle-with-cypress%2f&amp;title=Solving%20Wordle%20with%20Cypress" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fchrisrryan.github.io%2fposts%2fwordle-with-cypress%2f&amp;title=Solving%20Wordle%20with%20Cypress" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fchrisrryan.github.io%2fposts%2fwordle-with-cypress%2f&amp;description=Solving%20Wordle%20with%20Cypress" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Chris%20Ryan&amp;body=https%3a%2f%2fchrisrryan.github.io%2fposts%2fwordle-with-cypress%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Chris Ryan" /></a>
+  <header>
+    <h1>Chris Ryan</h1>
+  </header>
+  <main>
+    <p>Dev / Test Automation / DevOps</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/chrisrryan" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+<article>
+  <div class="post">
+    
+    <div class="content">
+      <a href="/posts/wordle-with-cypress/" class="image" style="--bg-image: url('/img/wordle-cypress.png');">
+    <img class="stretchH" src="/img/wordle-cypress.png" alt="Solving Wordle with Cypress">
+  </a>  <h2 id="wordle-solver-with-cypress">Wordle Solver with Cypress</h2>
+<p><strong>Wordle was taking so much time! Applying some automation to solving the daily puzzle&hellip;</strong> <em>So, I&rsquo;ve written some test automation to play it for me with Cypress, JavaScript and a list of 2,309 words. Check out my approach, code and video of it in action&hellip;</em></p>
+<p>Yes, the world is playing it so I&rsquo;ve succumbed. I&rsquo;ve been playing Wordle. It&rsquo;s irresistible and you only get one word a day, all part of the magic.</p>
+<p>But it&rsquo;s also an irritating distraction, so the solution is automation. As Abraham Maslow said, &lsquo;when all you have is a hammer, everything looks like a nail&rsquo;. Well said, and it does indeed look like a nail.</p>
+<p>So, I&rsquo;ve fired up VS Code; together with some Javascript, Cypress and the list of 2,309 words Wordle uses for its answers. Here&rsquo;s the result.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/AOB2J4gZEOA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="the-approach">The Approach</h3>
+<p>Cypress is a great tool with good documentation, and I wanted to experiment with it. I structured the code into two classes:</p>
+<p><strong><em>PageActions class</em></strong>
+This handles the page interaction; button clicks, reads and records the response from Wordle. The shadow DOM on the Wordle page allows extraction of the score for each attempt: Green (correct), Yellow (present) and Grey (absent).</p>
+<p><strong><em>Solver class</em></strong>
+The Solver class uses the word list used for its answers. It loads these into an array and as the responses come back it eliminates words from this array to narrow down to the correct solution. As starting point, it uses <em>STARE</em> as its first word, a reasonable first guess I feel. I&rsquo;ve read some analysis that other words might be better, <em>ADIEU</em> for example but I&rsquo;ll perhaps experiment with others later. Using the feedback from PageActions these word array is pruned; when a letter is correct then eliminate all words that letter(s) aren&rsquo;t in that position, where is present remove all word that don&rsquo;t contain it and that have that leter in that position and where a letter is absent then remove all words containing it. When making a guess if possible use a word with no repeat letters as that maximises our elimination or confirmation of letters.</p>
+<p>This approach works well enough usually solving with four attempts which I feel is par for the puzzle. It could be improved using Information Theory as explained in the excellent <a href="https://youtu.be/v68zYyaEmEA">Solving Wordle using information theory</a> video but that&rsquo;s for another day!</p>
+<h3 id="the-code">The Code</h3>
+<p>Check my code here on GitHub.</p>
+<p><a href="https://github.com/chrisrryan/wordle-cypress.git">GitHub chrisrryan/wordle-cypress</a></p>
+<p><em>Article by Chris Ryan</em></p>
+
+    </div>
+    <footer><div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/cypress/">Cypress</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/cypress/">Cypress</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/test-automation/">Test-Automation</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/wordle/">Wordle</a></li>
+        
+      
+    </ul>
+  
+</div>
+</footer>
+  </div>
+</article>
+<div class="pagination">
+  
+  <a href="/posts/rapid-software-testing/" class="button left"
+    ><span>Rapid Software Testing (RST)</span></a
+  >
+   
+  <a href="/posts/wordle-selenium/" class="button right"
+    ><span>Solving Wordle with Selenium 4 &amp; Java 17</span></a
+  >
+  
+</div>
+
+      </main>
+      <section id="site-sidebar">
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+          
+          <li>
+              <a href="/categories/.net/">.net<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/cypress/">cypress<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/selenium/">selenium<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/software-testing/">software-testing<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/test-automation/">test-automation<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/testing/">testing<span class="count">2</span></a>
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>Chris Ryan's Site</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+  <p class="copyright">
+    © 2023 CHRIS RYAN
+      <br>
+    
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    
+    <script>hljs.highlightAll();</script><script src="/js/bundle.min.e6d10a8d42b07d29baa2afb0d72a501c593c2f6577582527cc26c24175c10f3a.js" integrity="sha256-5tEKjUKwfSm6oq&#43;w1ypQHFk8L2V3WCUnzCbCQXXBDzo="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>

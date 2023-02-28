@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Chris Ryan</title>
+    <link>https://chrisrryan.github.io/posts/</link>
+    <description>Recent content in Posts on Chris Ryan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 CHRIS RYAN</copyright><atom:link href="https://chrisrryan.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rapid Software Testing (RST)</title>
+      <link>https://chrisrryan.github.io/posts/rapid-software-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisrryan.github.io/posts/rapid-software-testing/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;RAPID SOFTWARE TESTING (RST)&lt;/em&gt;&lt;/strong&gt;, authored by &lt;a href=&#34;https://www.satisfice.com&#34;&gt;James Bach&lt;/a&gt;, is an advocate of exploratory testing to build an understanding of the product, its users and the risks. Other testing methodologies focus on creating test artifacts based upon features, in contrast with RST, it&amp;rsquo;s light on paperwork and rapid as it encourages focus on product stewardship and a de-emphasis on artifact collection and reporting counts&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Solving Wordle with Cypress</title>
+      <link>https://chrisrryan.github.io/posts/wordle-with-cypress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisrryan.github.io/posts/wordle-with-cypress/</guid>
+      <description>Wordle Solver with Cypress Wordle was taking so much time! Applying some automation to solving the daily puzzle&amp;hellip; So, I&amp;rsquo;ve written some test automation to play it for me with Cypress, JavaScript and a list of 2,309 words. Check out my approach, code and video of it in action&amp;hellip;
+Yes, the world is playing it so I&amp;rsquo;ve succumbed. I&amp;rsquo;ve been playing Wordle. It&amp;rsquo;s irresistible and you only get one word a day, all part of the magic.</description>
+    </item>
+    
+    <item>
+      <title>Solving Wordle with Selenium 4 &amp; Java 17</title>
+      <link>https://chrisrryan.github.io/posts/wordle-selenium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisrryan.github.io/posts/wordle-selenium/</guid>
+      <description>Wordle Solver with Selenium 4 As a comparison, based upon my Wordle automation solution using Cypress, this time I&amp;rsquo;ve used Selenium 4 and Java 17 to solve the puzzle.
+I&amp;rsquo;m not going to get into a full Selenium versus Cypress comparison here but I&amp;rsquo;d say both solutions work very well. Selenium has been around for many years but with version 4, the webdriver has been much improved with W3C compliance, integration with CDP (as Cypress uses) and relative locators for more stable scripts.</description>
+    </item>
+    
+    <item>
+      <title>Test Automation with .NET Core 6, RestSharp 1.07&#43; and NUnit</title>
+      <link>https://chrisrryan.github.io/posts/dotnet6_test_automation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisrryan.github.io/posts/dotnet6_test_automation/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Test Automation with .NET Core 6&lt;/strong&gt;, time to investigate .NET Core 6 and RESTSharp 1.07+ for Test Automation.  NET CORE 6 is now stable and production ready, so I felt it was time to jump in and implement some test automation with it&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Test Automation Pyramid</title>
+      <link>https://chrisrryan.github.io/posts/test-automation-pyramid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisrryan.github.io/posts/test-automation-pyramid/</guid>
+      <description>WHAT IS THE TEST AUTOMATION PYRAMID? The Test Automation Pyramid, differentiates test types to maximise the benefits of each to deliver the optimal test strategy and return on investment. It&amp;rsquo;s an essential framework in the development of an effective test strategy.
+Selection Criteria to Maximise ROI The benefits of test automation may lead to a desire to automate everything. However, there&amp;rsquo;s a smarter way to approach this, to recognise the different types of tests and use each most effectively.</description>
+    </item>
+    
+    <item>
+      <title>The Test Engineering Dictionary</title>
+      <link>https://chrisrryan.github.io/posts/dictionary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisrryan.github.io/posts/dictionary/</guid>
+      <description>&lt;h3 id=&#34;the-test-engineering-dictionary&#34;&gt;The Test Engineering Dictionary&lt;/h3&gt;
+&lt;p&gt;Teams need to share a vocabulary; so everyone has clarity. Without it, misunderstanding occurs. It&amp;rsquo;s vital to effective communication. Here&amp;rsquo;s a list of some key terms:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

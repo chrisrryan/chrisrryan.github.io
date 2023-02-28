@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cypress on Chris Ryan</title>
+    <link>https://chrisrryan.github.io/categories/cypress/</link>
+    <description>Recent content in Cypress on Chris Ryan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 CHRIS RYAN</copyright><atom:link href="https://chrisrryan.github.io/categories/cypress/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solving Wordle with Cypress</title>
+      <link>https://chrisrryan.github.io/posts/wordle-with-cypress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisrryan.github.io/posts/wordle-with-cypress/</guid>
+      <description>Wordle Solver with Cypress Wordle was taking so much time! Applying some automation to solving the daily puzzle&amp;hellip; So, I&amp;rsquo;ve written some test automation to play it for me with Cypress, JavaScript and a list of 2,309 words. Check out my approach, code and video of it in action&amp;hellip;
+Yes, the world is playing it so I&amp;rsquo;ve succumbed. I&amp;rsquo;ve been playing Wordle. It&amp;rsquo;s irresistible and you only get one word a day, all part of the magic.</description>
+    </item>
+    
+  </channel>
+</rss>
